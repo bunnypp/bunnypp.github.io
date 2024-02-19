@@ -9,8 +9,9 @@ type LinkButtonProps = {
 const LinkButton = ({title, ref}: LinkButtonProps) => {
     return (
         <Button 
-            variant="link" 
-            color="#777473" 
+            variant="ghost" 
+            _hover={{textShadow: "0px 0px 16px #fbaaa6"}}
+            color="#b77266" 
             size={{base: "xs", md: "md", lg: "lg"}}
             onClick={() => ref?.current.scrollIntoView({behavior: "smooth"})}
         >{title}</Button>

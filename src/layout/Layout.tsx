@@ -38,6 +38,7 @@ const Layout = ({ children, allRefs}: LayoutProps) => {
         zIndex={5} p={4} 
         marginLeft={{base: 0, md: "25%" }}
         overflow={"scroll"}
+        px={5}
         gap={{base: 5, md: 10}}>
         {children}
       </Flex>

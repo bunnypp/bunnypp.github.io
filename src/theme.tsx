@@ -1,4 +1,4 @@
-import { extendTheme } from '@chakra-ui/react'
+import { defineStyleConfig, extendTheme } from '@chakra-ui/react'
 import { mode } from '@chakra-ui/theme-tools';
 import '@fontsource-variable/crimson-pro';
 import '@fontsource-variable/montserrat';

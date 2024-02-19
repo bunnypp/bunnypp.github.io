@@ -36,14 +36,15 @@ const Sidebar = ({allRefs}: SidebarProps) => {
                     size={{md: "xs", lg: "sm"}} 
                     textAlign={"center"}
                     textColor={"#818b8a"}>
-                        CS @ Unimelb | Software Developer @ Meaningware | Founder @ Mirror Mirror Technologies
+                        CS @ Unimelb | Software Developer @ Meaningware | Co-founder @ Mirror Mirror Technologies
                 </Text>
                 <HStack gap={5} mb={5}>
                     <Link href="https://linkedin.com/in/bunny-phetmunee-b63950219">
-                        <Icon as={FaLinkedin} boxSize={5}/>
+                        <Icon as={FaLinkedin} boxSize={5} _hover={{color: "#fbaaa6"}}
+                        />
                     </Link>
                     <Link href="https://github.com/bunnypp">
-                        <Icon as={FaGithub} boxSize={5}/>
+                        <Icon as={FaGithub} boxSize={5} _hover={{color: "#fbaaa6"}}/>
                     </Link>
                 </HStack >
             </Show>

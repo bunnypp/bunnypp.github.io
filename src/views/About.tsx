@@ -1,6 +1,6 @@
-import { Flex, Text, Image, VStack, Heading} from "@chakra-ui/react"
+import { Flex, Text, Image, VStack, Heading, Show, HStack, Icon, Link} from "@chakra-ui/react"
 import { MutableRefObject } from "react";
-
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 type AboutProps = {
     ref?: MutableRefObject<HTMLDivElement>;
@@ -9,6 +9,29 @@ type AboutProps = {
 const About = ({ref}: AboutProps) => {
     return (
         <Flex ref={ref} direction="column" p={{base: 0, md: 5}} gap={{base: 5, md: 10}}>
+            <Show below='md'>
+                <Heading as='h1' 
+                    size={{base: "sm", md: "md", lg: "lg"}} 
+                    textAlign={"center"} 
+                    textColor={"#007970"}>
+                        Bunny Phetmunee
+                </Heading>
+                <Text
+                    mx={5}
+                    size={{md: "xs", lg: "sm"}} 
+                    textAlign={"center"}
+                    textColor={"#818b8a"}>
+                        CS @ Unimelb | Software Developer @ Meaningware | Co-founder @ Mirror Mirror Technologies
+                </Text>
+                <HStack gap={5} mb={5} alignSelf="center">
+                    <Link href="https://linkedin.com/in/bunny-phetmunee-b63950219">
+                        <Icon as={FaLinkedin} boxSize={5} _hover={{color: "#fbaaa6"}}/>
+                    </Link>
+                    <Link href="https://github.com/bunnypp">
+                        <Icon as={FaGithub} boxSize={5} _hover={{color: "#fbaaa6"}}/>
+                    </Link>
+                </HStack >
+            </Show>
             <Heading as='h1' 
                 size={{base: "sm", md: "md", lg: "lg"}} 
                 alignSelf={{base: "center", md:"normal"}}>
