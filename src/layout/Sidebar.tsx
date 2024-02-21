@@ -11,10 +11,10 @@ type SidebarProps = {
 
 const Sidebar = ({allRefs}: SidebarProps) => {
     const links = [
-        {ref: allRefs[0], title: "About"},
         {ref: allRefs[1], title: "Experience"},
         {ref: allRefs[2], title: "Projects"},
         {ref: allRefs[3], title: "Skills"},
+        {ref: allRefs[0], title: "About"},
         {ref: allRefs[4], title: "Gallery"},
     ]
     return (
@@ -23,7 +23,7 @@ const Sidebar = ({allRefs}: SidebarProps) => {
         gap={{base: 5, md: 10}} 
         direction={{base: "row", md:"column"}} 
         align={"center"}
-        my={{base: 0, md: 10, lg: 20}}>
+        my={{base: 0, md: 5, lg: 10}}>
             <Show above='md'>
                 <Heading as='h1' 
                     size={{base: "sm", md: "md", lg: "lg"}} 

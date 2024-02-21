@@ -28,14 +28,13 @@ const Layout = ({ children, allRefs}: LayoutProps) => {
         <Box width="full" h="100vh" bgGradient={backgroundGradient} zIndex={-1} position={"fixed"}></Box>
         <Box w={{ base: "full", md: "25%" }} zIndex={4}
         h={{ sm: "10vh", md: "100vh"}} 
-        p={4} 
         alignItems="center" 
         justifyContent="center"
         position={{base: "relative", md:"fixed"}}>
             <Sidebar allRefs={allRefs}/>
         </Box>
       <Flex direction="column" 
-        zIndex={5} p={4} 
+        zIndex={5} p={5} 
         marginLeft={{base: 0, md: "25%" }}
         overflow={"scroll"}
         px={5}

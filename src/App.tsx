@@ -21,13 +21,14 @@ function App() {
 
     return (
         <Layout allRefs={allRefs}>
-            <About ref={aboutRef}/>
-            <Divider borderColor={"#96837d"}/>
+            
             <Experience ref={experienceRef}/>
             <Divider borderColor={"#96837d"}/>
             <Skills ref={skillsRef}/>
             <Divider borderColor={"#96837d"}/>
             <Projects ref={projectsRef}/>
+            <Divider borderColor={"#96837d"}/>
+            <About ref={aboutRef}/>
             <Divider borderColor={"#96837d"}/>
             <Gallery ref={galleryRef}/>
         </Layout>
